@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Run Testing Script
         if: runner.os == 'Linux'  
-        run: echo "The environment is ready for testing!"
+        run: echo "Voila!" && echo 'runner.os'
