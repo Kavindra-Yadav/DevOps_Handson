@@ -1,0 +1,13 @@
+name: DefaultTestingEnvironment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    # Using double brackets and checking against a string is more robust  
+    steps:
+      - name: Run Testing Script
+        if: runner.os == 'Linux'  
+        run: echo "The environment is ready for testing!"
