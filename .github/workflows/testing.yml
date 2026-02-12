@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Run Testing Script
         if: runner.os == 'Linux'  
-        run: echo "Voila!" && echo runner.os
+        run: echo "Voila!" && echo "${{runner.os}}"
